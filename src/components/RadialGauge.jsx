@@ -37,7 +37,7 @@ const RadialGauge = React.memo((props) => {
             fontSize: "4rem",
             color: "white",
             formatter: function (val) {
-              return val + "°C";
+             return Math.round(val * 9 / 5 + 32) + "°F";
             },
           },
         },

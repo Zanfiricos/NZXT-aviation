@@ -89,7 +89,7 @@ const KrakenDisplay = React.memo(() => {
           >
             LIQUID
           </p>
-          <p>{kraken?.temperature || 0}°C</p>
+         <p>{Math.round((kraken?.temperature || 0) * 9 / 5 + 32)}°F</p>
         </LiquidContainer>
 
         <RadialGaugeContainer>
